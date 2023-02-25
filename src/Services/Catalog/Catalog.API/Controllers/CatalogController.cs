@@ -1,5 +1,5 @@
 ﻿using Catalog.API.Entities;
-using Catalog.API.Repositories;
+using Catalog.API.Repositories.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Collections.Generic;
