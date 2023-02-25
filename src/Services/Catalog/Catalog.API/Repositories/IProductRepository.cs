@@ -12,6 +12,6 @@ namespace Catalog.API.Repositories
         Task<IEnumerable<Product>> GetProductByCategoryAsync(string categoryName);
         Task CreateProductAsync(Product product);
         Task<bool> UpdateProduct(Product product);
-        Task<bool> DeleteProductAsync(Product product);
+        Task<bool> DeleteProductAsync(string id);
     }
 }
