@@ -1,7 +1,7 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET
+name: Build AspnetMicroservices
 
 on:
   pull_request:
@@ -19,8 +19,8 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore ./AspnetMicroservices/src/aspnetrun-microservices.sln
+      run: dotnet restore ./src/aspnetrun-microservices.sln
     - name: Build
-      run: dotnet build AspnetMicroservices/src/Services/Catalog/Catalog.API/Catalog.API.csproj
+      run: dotnet build src/Services/Catalog/Catalog.API/Catalog.API.csproj
     - name: Test
       run: dotnet test --no-build --verbosity normal
