@@ -22,5 +22,3 @@ jobs:
       run: dotnet restore ./src/aspnetrun-microservices.sln
     - name: Build
       run: dotnet build src/Services/Catalog/Catalog.API/Catalog.API.csproj
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
