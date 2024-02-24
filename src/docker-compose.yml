@@ -4,7 +4,6 @@ services:
   catalogdb:
     image: mongo
 
-
   catalog.api:
     image: ${DOCKER_REGISTRY-}catalogapi
     build:
