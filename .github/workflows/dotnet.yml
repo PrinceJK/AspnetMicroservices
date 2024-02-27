@@ -23,4 +23,4 @@ jobs:
     - name: BuildCatalogApi
       run: dotnet build src/Services/Catalog/Catalog.API/Catalog.API.csproj
     - name: BuildBasketApi
-      run: dotnet build src/Services/Catalog/Catalog.API/Basket.API.csproj
+      run: dotnet build src/Services/Basket/Basket.API/Basket.API.csproj
