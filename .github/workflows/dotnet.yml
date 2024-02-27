@@ -20,5 +20,7 @@ jobs:
         dotnet-version: 6.0.x
     - name: Restore dependencies
       run: dotnet restore ./src/aspnetrun-microservices.sln
-    - name: Build
+    - name: BuildCatalogApi
       run: dotnet build src/Services/Catalog/Catalog.API/Catalog.API.csproj
+    - name: BuildBasketApi
+      run: dotnet build src/Services/Catalog/Catalog.API/Basket.API.csproj
